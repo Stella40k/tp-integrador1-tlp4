@@ -8,7 +8,7 @@ import {
 //encapsula la logica de la creacion y asignacion de prioridades ´por defecto segun la categoria
 
 export class TicketFacktory {
-  public static createTicketDara(dto: ICreateTicketDTO): ITicketCreationResult {
+  public static createTicketData(dto: ICreateTicketDTO): ITicketCreationResult {
     const priority =
       dto.priority ?? TicketFacktory.getDefaultPriority(dto.category);
     const formattedTitle = `[${dto.category}] ${dto.title.trim()}`;

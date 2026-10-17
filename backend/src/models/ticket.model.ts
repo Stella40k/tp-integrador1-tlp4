@@ -3,7 +3,7 @@ import { sequelize } from "../config/database";
 import {
   ITicketAttributes,
   TicketCategory,
-  ticketPriority,
+  TicketPriority,
   TicketStatus,
 } from "../types";
 import { User } from "./user.model";
@@ -21,7 +21,7 @@ export class Ticket
   public title!: string;
   public description!: string;
   public category!: TicketCategory;
-  public priority!: ticketPriority;
+  public priority!: TicketPriority;
   public status!: TicketStatus;
   public creatorId!: number;
   public assignedToId!: number | null;
